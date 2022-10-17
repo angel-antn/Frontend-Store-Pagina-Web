@@ -32,7 +32,7 @@ a {
 
 p {
     color: #2b243d;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .header {
@@ -229,7 +229,7 @@ h3 {
 
 .footer p {
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer--nosotros {
@@ -247,6 +247,18 @@ h3 {
     .producto__nombre,
     .producto__precio {
         font-size: 4rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+
+    .footer p {
+        font-size: 2rem;
     }
 }
 
