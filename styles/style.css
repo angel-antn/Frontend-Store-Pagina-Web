@@ -106,7 +106,7 @@ h3 {
 .producto__nombre,
 .producto__precio {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: var(--fuente_titulo);
     line-height: 1.2;
     margin: 1rem 0;
@@ -234,6 +234,13 @@ h3 {
 
 .footer--nosotros {
     margin-top: 0;
+}
+
+@media (min-width: 270px) {
+    .producto__nombre,
+    .producto__precio {
+        font-size: 2.5rem;
+    }
 }
 
 @media (min-width: 360px) {
