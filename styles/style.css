@@ -1,0 +1,292 @@
+:root {
+    --primario: #aaccff;
+    --secundario: #5599ff;
+    --white: #fff;
+    --yellow: #ffce00;
+    --dark_yellow: #e4b805;
+    --parrafos: #2b243d;
+
+    --fuente_titulo: "Staatliches", cursive;
+    --fuente_parrafo: "Nunito", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #2b243d;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: var(--fuente_parrafo);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente_titulo);
+    font-size: 4rem;
+    color: var(--secundario);
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.header {
+    padding: 3.5rem 0;
+    background: var(--primario);
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secundario);
+    gap: 4rem;
+}
+
+.nav__enlaces {
+    font-family: var(--fuente_titulo);
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.nav__enlaces--activo,
+.nav__enlaces:hover {
+    color: var(--yellow);
+}
+
+.grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.producto {
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.producto__imagen {
+    width: 100%;
+}
+
+.producto__nombre,
+.producto__precio {
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--fuente_titulo);
+    line-height: 1.2;
+    margin: 1rem 0;
+    color: var(--secundario);
+}
+
+.graph {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.graph--camisas {
+    grid-row: 2 / 3;
+    background-image: url(../img/grafico1.jpg);
+}
+
+.graph--node {
+    grid-row: 8 / 9;
+    background-image: url(../img/grafico2.jpg);
+}
+
+.nosotros {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.nosotros p {
+    margin: 2rem 2.5rem;
+}
+
+.razones {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    background-color: var(--primario);
+}
+
+.razones__titulo {
+    padding: 3rem 0 1.5rem;
+    margin-bottom: 0;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    text-align: center;
+    padding: 0 2.5rem 6rem;
+}
+
+.icono {
+    width: 38%;
+}
+
+.icono h3 {
+    margin: 0;
+}
+
+.icono {
+    width: 100%;
+}
+
+.camisa {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formulario {
+
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    
+}
+
+.formulario__campo {
+    border: 0.5rem solid var(--secundario);
+    background-color: var(--primario);
+    color: var(--parrafos);
+    font-size: 2rem;
+    font-family: var(--fuente_parrafo);
+    padding: 1rem 0.5rem;
+    appearance: none;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.formulario__submit {
+    background-color: var(--yellow);
+    border: none;
+    font-size: 3rem;
+    font-family: var(--fuente_titulo);
+    color: var(--parrafos);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / 3;
+}
+
+.formulario__submit:hover{
+    cursor: pointer;
+    background-color: var(--dark_yellow);
+}
+
+.footer {
+    background-color: var(--secundario);
+    font-size: 2rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.footer--nosotros {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 120rem;
+    }
+
+    .producto {
+        padding: 3.5rem;
+    }
+
+    .graph {
+        border-radius: 15px;
+    }
+
+    .graph--node {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+
+    .nosotros {
+        flex-direction: row;
+        width: 120rem;
+    }
+
+    .nosotros__texto,
+    .nosotros__img {
+        width: 45%;
+    }
+
+    .nosotros__img {
+        border-radius: 15px;
+    }
+
+    .iconos {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 8rem 6rem;
+        gap: 8rem;
+    }
+
+    .camisa {
+        margin: auto;
+        text-align: left;
+        width: 120rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .camisa__img{
+        grid-row: 1 / 3;
+    }
+}

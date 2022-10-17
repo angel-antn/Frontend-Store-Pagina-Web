@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Front-end Store</title>
+        <link rel="icon" href="img/icon.png">
+
+        <link rel="preload" href="styles/normalize.css" as="style" />
+        <link rel="stylesheet" href="styles/normalize.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito&family=Staatliches&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preload" href="styles/style.css" as="style" />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="img/logo.png" alt="logotipo" /></a>
+        </header>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__enlaces nav__enlaces--activo"
+                >Tienda</a
+            >
+            <a href="nosotros.html" class="nav__enlaces">Nosotros</a>
+        </nav>
+
+        <main>
+            <h1>React.JS</h1>
+
+            <div class="camisa">
+                <img src="img/3.jpg" alt="camisa" class="camisa__img" />
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nobis cumque nam quisquam ullam, magni minus. Odio quaerat
+                    illum, optio natus omnis architecto quae nulla totam debitis
+                    eligendi ullam perferendis excepturi.
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>
+                            -- Seleccionar talla --
+                        </option>
+                        <option>Talla S</option>
+                        <option>Talla M</option>
+                        <option>Talla L</option>
+                    </select>
+                    <input
+                        class="formulario__campo"
+                        type="number"
+                        placeholder="Cantidad"
+                        min="1"
+                    />
+                    <input
+                        class="formulario__submit"
+                        type="submit"
+                        value="Agregar al carrito"
+                    />
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">
+                Front-end Store.<br />Todos los derechos reservados 2022.
+            </p>
+        </footer>
+    </body>
+</html>
